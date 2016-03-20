@@ -1,0 +1,3 @@
+Requirement already satisfied (use --upgrade to upgrade): gevent in ./env/lib/python2.7/site-packages
+Requirement already satisfied (use --upgrade to upgrade): greenlet>=0.4.9 in ./env/lib/python2.7/site-packages (from gevent)
+Cleaning up...

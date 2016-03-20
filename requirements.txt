@@ -1,0 +1,14 @@
+Flask==0.10.1
+Flask-SQLAlchemy==2.1
+Jinja2==2.8
+MarkupSafe==0.23
+SQLAlchemy==1.0.12
+Werkzeug==0.11.4
+gevent==1.1b4
+gevent-socketio==0.3.6
+gevent-websocket==0.9.5
+greenlet==0.4.9
+gunicorn==18.0
+itsdangerous==0.24
+six==1.10.0
+wsgiref==0.1.2

@@ -1,0 +1,187 @@
+Downloading/unpacking gevent-socketio
+  Running setup.py egg_info for package gevent-socketio
+    
+    Installed /home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent-socketio/versiontools-1.9.1-py2.7.egg
+    
+    warning: no previously-included files found matching 'socketio/.ropeproject/*'
+    warning: no previously-included files found matching 'socketio/sample_protocol_for_doc.py'
+Downloading/unpacking gevent (from gevent-socketio)
+  Running setup.py egg_info for package gevent
+    
+    no previously-included directories found matching '*/__pycache__'
+    warning: no previously-included files matching '*.so' found anywhere in distribution
+    warning: no previously-included files matching '*.o' found anywhere in distribution
+    warning: no previously-included files matching 'config.log' found anywhere in distribution
+    warning: no previously-included files matching 'config.status' found anywhere in distribution
+    no previously-included directories found matching 'doc/_build'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '.coverage' found under directory 'greentest'
+    no previously-included directories found matching 'greentest/htmlcov'
+    warning: no previously-included files matching 'stamp-h?' found under directory 'c-ares'
+    warning: no previously-included files matching 'ares_build.h.orig' found under directory 'c-ares'
+    no previously-included directories found matching 'libev/.deps'
+    warning: no previously-included files matching 'Makefile' found under directory 'libev'
+    warning: no previously-included files matching 'libtool' found under directory 'libev'
+    warning: no previously-included files matching 'stamp-h?' found under directory 'libev'
+    warning: no previously-included files matching 'config.h' found under directory 'libev'
+    warning: no previously-included files matching '_corecffi.c' found under directory 'gevent'
+    warning: no previously-included files found matching 'Makefile'
+    
+    WARNING: The gevent.ares extension has been disabled.
+Downloading/unpacking gevent-websocket (from gevent-socketio)
+  Downloading gevent-websocket-0.9.5.tar.gz
+  Running setup.py egg_info for package gevent-websocket
+    
+Downloading/unpacking greenlet>=0.4.9 (from gevent->gevent-socketio)
+  Running setup.py egg_info for package greenlet
+    
+Installing collected packages: gevent-socketio, gevent, gevent-websocket, greenlet
+  Running setup.py install for gevent-socketio
+    
+    warning: no previously-included files found matching 'socketio/.ropeproject/*'
+    warning: no previously-included files found matching 'socketio/sample_protocol_for_doc.py'
+  Running setup.py install for gevent
+    Running '(cd  "/home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/libev"  && /bin/sh ./configure   && cp config.h "$OLDPWD" ) > configure-output.txt' in /home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/build/temp.linux-x86_64-2.7/libev
+    building 'gevent.corecext' extension
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DLIBEV_EMBED=1 -DEV_COMMON= -DEV_CLEANUP_ENABLE=0 -DEV_EMBED_ENABLE=0 -DEV_PERIODIC_ENABLE=0 -Ibuild/temp.linux-x86_64-2.7/libev -Ilibev -I/usr/include/python2.7 -c gevent/gevent.corecext.c -o build/temp.linux-x86_64-2.7/gevent/gevent.corecext.o
+    In file included from gevent/libev.h:2:0,
+                     from gevent/gevent.corecext.c:241:
+    libev/ev.c:483:48: warning: "/*" within comment [-Wcomment]
+     /*#define MIN_INTERVAL  0.00000095367431640625 /* 1/2**20, good till 2200 */
+     ^
+    In file included from gevent/libev.h:2:0,
+                     from gevent/gevent.corecext.c:241:
+    libev/ev.c:1692:31: warning: ‘ev_default_loop_ptr’ initialized and declared ‘extern’ [enabled by default]
+       EV_API_DECL struct ev_loop *ev_default_loop_ptr = 0; /* needs to be initialised to make it a definition despite extern */
+                                   ^
+    In file included from gevent/libev.h:2:0,
+                     from gevent/gevent.corecext.c:241:
+    libev/ev.c: In function ‘ev_io_start’:
+    libev/ev.c:3715:34: warning: suggest parentheses around arithmetic in operand of ‘|’ [-Wparentheses]
+       fd_change (EV_A_ fd, w->events & EV__IOFDSET | EV_ANFD_REIFY);
+                                      ^
+    libev/ev.c: At top level:
+    libev/ev.c:4956:27: warning: "/*" within comment [-Wcomment]
+     /* EV_STAT     0x00001000 /* stat data changed */
+     ^
+    libev/ev.c:4957:27: warning: "/*" within comment [-Wcomment]
+     /* EV_EMBED    0x00010000 /* embedded event loop needs sweep */
+     ^
+    In file included from gevent/libev.h:2:0,
+                     from gevent/gevent.corecext.c:241:
+    libev/ev.c: In function ‘evpipe_write’:
+    libev/ev.c:2321:17: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+               write (evpipe [1], &counter, sizeof (uint64_t));
+                     ^
+    libev/ev.c:2333:17: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+               write (evpipe [1], &(evpipe [1]), 1);
+                     ^
+    libev/ev.c: In function ‘pipecb’:
+    libev/ev.c:2354:16: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
+               read (evpipe [1], &counter, sizeof (uint64_t));
+                    ^
+    libev/ev.c:2368:16: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
+               read (evpipe [0], &dummy, sizeof (dummy));
+                    ^
+    x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -D_FORTIFY_SOURCE=2 -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security build/temp.linux-x86_64-2.7/gevent/gevent.corecext.o -o build/lib.linux-x86_64-2.7/gevent/corecext.so
+    Linking /home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/build/lib.linux-x86_64-2.7/gevent/corecext.so to /home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/gevent/corecext.so
+    Running '(cd  "/home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/c-ares"  && if [ -e ares_build.h ]; then cp ares_build.h ares_build.h.orig; fi   && /bin/sh ./configure CONFIG_COMMANDS= CONFIG_FILES=   && cp ares_config.h ares_build.h "$OLDPWD"   && mv ares_build.h.orig ares_build.h) > configure-output.txt' in /home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/build/temp.linux-x86_64-2.7/c-ares
+    building 'gevent.ares' extension
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c gevent/gevent.ares.c -o build/temp.linux-x86_64-2.7/gevent/gevent.ares.o
+    In file included from gevent/gevent.ares.c:242:0:
+    gevent/dnshelper.c:19:0: warning: "PyUnicode_FromString" redefined [enabled by default]
+       #define PyUnicode_FromString         PyBytes_FromString
+     ^
+    In file included from /usr/include/python2.7/Python.h:85:0,
+                     from gevent/gevent.ares.c:4:
+    /usr/include/python2.7/unicodeobject.h:281:0: note: this is the location of the previous definition
+     # define PyUnicode_FromString PyUnicodeUCS4_FromString
+     ^
+    In file included from gevent/gevent.ares.c:242:0:
+    gevent/dnshelper.c: In function ‘gevent_append_addr’:
+    gevent/dnshelper.c:53:5: warning: implicit declaration of function ‘inet_ntop’ [-Wimplicit-function-declaration]
+         if (ares_inet_ntop(family, src, tmpbuf, tmpsize)) {
+         ^
+    gevent/dnshelper.c: In function ‘gevent_make_sockaddr’:
+    gevent/dnshelper.c:146:5: warning: implicit declaration of function ‘inet_pton’ [-Wimplicit-function-declaration]
+         if ( ares_inet_pton(AF_INET, hostp, &((struct sockaddr_in*)sa6)->sin_addr.s_addr) > 0 ) {
+         ^
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares__close_sockets.c -o build/temp.linux-x86_64-2.7/c-ares/ares__close_sockets.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares__get_hostent.c -o build/temp.linux-x86_64-2.7/c-ares/ares__get_hostent.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares__read_line.c -o build/temp.linux-x86_64-2.7/c-ares/ares__read_line.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares__timeval.c -o build/temp.linux-x86_64-2.7/c-ares/ares__timeval.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_cancel.c -o build/temp.linux-x86_64-2.7/c-ares/ares_cancel.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_create_query.c -o build/temp.linux-x86_64-2.7/c-ares/ares_create_query.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_data.c -o build/temp.linux-x86_64-2.7/c-ares/ares_data.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_destroy.c -o build/temp.linux-x86_64-2.7/c-ares/ares_destroy.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_expand_name.c -o build/temp.linux-x86_64-2.7/c-ares/ares_expand_name.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_expand_string.c -o build/temp.linux-x86_64-2.7/c-ares/ares_expand_string.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_fds.c -o build/temp.linux-x86_64-2.7/c-ares/ares_fds.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_free_hostent.c -o build/temp.linux-x86_64-2.7/c-ares/ares_free_hostent.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_free_string.c -o build/temp.linux-x86_64-2.7/c-ares/ares_free_string.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_getenv.c -o build/temp.linux-x86_64-2.7/c-ares/ares_getenv.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_gethostbyaddr.c -o build/temp.linux-x86_64-2.7/c-ares/ares_gethostbyaddr.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_gethostbyname.c -o build/temp.linux-x86_64-2.7/c-ares/ares_gethostbyname.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_getnameinfo.c -o build/temp.linux-x86_64-2.7/c-ares/ares_getnameinfo.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_getopt.c -o build/temp.linux-x86_64-2.7/c-ares/ares_getopt.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_getsock.c -o build/temp.linux-x86_64-2.7/c-ares/ares_getsock.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_init.c -o build/temp.linux-x86_64-2.7/c-ares/ares_init.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_library_init.c -o build/temp.linux-x86_64-2.7/c-ares/ares_library_init.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_llist.c -o build/temp.linux-x86_64-2.7/c-ares/ares_llist.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_mkquery.c -o build/temp.linux-x86_64-2.7/c-ares/ares_mkquery.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_nowarn.c -o build/temp.linux-x86_64-2.7/c-ares/ares_nowarn.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_options.c -o build/temp.linux-x86_64-2.7/c-ares/ares_options.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_parse_a_reply.c -o build/temp.linux-x86_64-2.7/c-ares/ares_parse_a_reply.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_parse_aaaa_reply.c -o build/temp.linux-x86_64-2.7/c-ares/ares_parse_aaaa_reply.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_parse_mx_reply.c -o build/temp.linux-x86_64-2.7/c-ares/ares_parse_mx_reply.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_parse_naptr_reply.c -o build/temp.linux-x86_64-2.7/c-ares/ares_parse_naptr_reply.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_parse_ns_reply.c -o build/temp.linux-x86_64-2.7/c-ares/ares_parse_ns_reply.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_parse_ptr_reply.c -o build/temp.linux-x86_64-2.7/c-ares/ares_parse_ptr_reply.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_parse_soa_reply.c -o build/temp.linux-x86_64-2.7/c-ares/ares_parse_soa_reply.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_parse_srv_reply.c -o build/temp.linux-x86_64-2.7/c-ares/ares_parse_srv_reply.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_parse_txt_reply.c -o build/temp.linux-x86_64-2.7/c-ares/ares_parse_txt_reply.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_platform.c -o build/temp.linux-x86_64-2.7/c-ares/ares_platform.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_process.c -o build/temp.linux-x86_64-2.7/c-ares/ares_process.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_query.c -o build/temp.linux-x86_64-2.7/c-ares/ares_query.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_search.c -o build/temp.linux-x86_64-2.7/c-ares/ares_search.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_send.c -o build/temp.linux-x86_64-2.7/c-ares/ares_send.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_strcasecmp.c -o build/temp.linux-x86_64-2.7/c-ares/ares_strcasecmp.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_strdup.c -o build/temp.linux-x86_64-2.7/c-ares/ares_strdup.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_strerror.c -o build/temp.linux-x86_64-2.7/c-ares/ares_strerror.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_timeout.c -o build/temp.linux-x86_64-2.7/c-ares/ares_timeout.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_version.c -o build/temp.linux-x86_64-2.7/c-ares/ares_version.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/ares_writev.c -o build/temp.linux-x86_64-2.7/c-ares/ares_writev.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/bitncmp.c -o build/temp.linux-x86_64-2.7/c-ares/bitncmp.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/inet_net_pton.c -o build/temp.linux-x86_64-2.7/c-ares/inet_net_pton.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/inet_ntop.c -o build/temp.linux-x86_64-2.7/c-ares/inet_ntop.o
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DHAVE_CONFIG_H= -DCARES_EMBED=1 -Ibuild/temp.linux-x86_64-2.7/c-ares -Ic-ares -I/usr/include/python2.7 -c c-ares/windows_port.c -o build/temp.linux-x86_64-2.7/c-ares/windows_port.o
+    x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -D_FORTIFY_SOURCE=2 -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security build/temp.linux-x86_64-2.7/gevent/gevent.ares.o build/temp.linux-x86_64-2.7/c-ares/ares__close_sockets.o build/temp.linux-x86_64-2.7/c-ares/ares__get_hostent.o build/temp.linux-x86_64-2.7/c-ares/ares__read_line.o build/temp.linux-x86_64-2.7/c-ares/ares__timeval.o build/temp.linux-x86_64-2.7/c-ares/ares_cancel.o build/temp.linux-x86_64-2.7/c-ares/ares_create_query.o build/temp.linux-x86_64-2.7/c-ares/ares_data.o build/temp.linux-x86_64-2.7/c-ares/ares_destroy.o build/temp.linux-x86_64-2.7/c-ares/ares_expand_name.o build/temp.linux-x86_64-2.7/c-ares/ares_expand_string.o build/temp.linux-x86_64-2.7/c-ares/ares_fds.o build/temp.linux-x86_64-2.7/c-ares/ares_free_hostent.o build/temp.linux-x86_64-2.7/c-ares/ares_free_string.o build/temp.linux-x86_64-2.7/c-ares/ares_getenv.o build/temp.linux-x86_64-2.7/c-ares/ares_gethostbyaddr.o build/temp.linux-x86_64-2.7/c-ares/ares_gethostbyname.o build/temp.linux-x86_64-2.7/c-ares/ares_getnameinfo.o build/temp.linux-x86_64-2.7/c-ares/ares_getopt.o build/temp.linux-x86_64-2.7/c-ares/ares_getsock.o build/temp.linux-x86_64-2.7/c-ares/ares_init.o build/temp.linux-x86_64-2.7/c-ares/ares_library_init.o build/temp.linux-x86_64-2.7/c-ares/ares_llist.o build/temp.linux-x86_64-2.7/c-ares/ares_mkquery.o build/temp.linux-x86_64-2.7/c-ares/ares_nowarn.o build/temp.linux-x86_64-2.7/c-ares/ares_options.o build/temp.linux-x86_64-2.7/c-ares/ares_parse_a_reply.o build/temp.linux-x86_64-2.7/c-ares/ares_parse_aaaa_reply.o build/temp.linux-x86_64-2.7/c-ares/ares_parse_mx_reply.o build/temp.linux-x86_64-2.7/c-ares/ares_parse_naptr_reply.o build/temp.linux-x86_64-2.7/c-ares/ares_parse_ns_reply.o build/temp.linux-x86_64-2.7/c-ares/ares_parse_ptr_reply.o build/temp.linux-x86_64-2.7/c-ares/ares_parse_soa_reply.o build/temp.linux-x86_64-2.7/c-ares/ares_parse_srv_reply.o build/temp.linux-x86_64-2.7/c-ares/ares_parse_txt_reply.o build/temp.linux-x86_64-2.7/c-ares/ares_platform.o build/temp.linux-x86_64-2.7/c-ares/ares_process.o build/temp.linux-x86_64-2.7/c-ares/ares_query.o build/temp.linux-x86_64-2.7/c-ares/ares_search.o build/temp.linux-x86_64-2.7/c-ares/ares_send.o build/temp.linux-x86_64-2.7/c-ares/ares_strcasecmp.o build/temp.linux-x86_64-2.7/c-ares/ares_strdup.o build/temp.linux-x86_64-2.7/c-ares/ares_strerror.o build/temp.linux-x86_64-2.7/c-ares/ares_timeout.o build/temp.linux-x86_64-2.7/c-ares/ares_version.o build/temp.linux-x86_64-2.7/c-ares/ares_writev.o build/temp.linux-x86_64-2.7/c-ares/bitncmp.o build/temp.linux-x86_64-2.7/c-ares/inet_net_pton.o build/temp.linux-x86_64-2.7/c-ares/inet_ntop.o build/temp.linux-x86_64-2.7/c-ares/windows_port.o -lrt -o build/lib.linux-x86_64-2.7/gevent/ares.so
+    Linking /home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/build/lib.linux-x86_64-2.7/gevent/ares.so to /home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/gevent/ares.so
+    building 'gevent._semaphore' extension
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c gevent/gevent._semaphore.c -o build/temp.linux-x86_64-2.7/gevent/gevent._semaphore.o
+    x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -D_FORTIFY_SOURCE=2 -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security build/temp.linux-x86_64-2.7/gevent/gevent._semaphore.o -o build/lib.linux-x86_64-2.7/gevent/_semaphore.so
+    Linking /home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/build/lib.linux-x86_64-2.7/gevent/_semaphore.so to /home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/build/gevent/gevent/_semaphore.so
+      File "/home/ivan/PycharmProjects/diploma/gevent-socketio/examples/flask_chat/env/lib/python2.7/site-packages/gevent/_socket3.py", line 186
+        def makefile(self, mode="r", buffering=None, *,
+                                                      ^
+    SyntaxError: invalid syntax
+    
+    
+    no previously-included directories found matching '*/__pycache__'
+    warning: no previously-included files matching '*.o' found anywhere in distribution
+    no previously-included directories found matching 'doc/_build'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '.coverage' found under directory 'greentest'
+    no previously-included directories found matching 'greentest/htmlcov'
+    warning: no previously-included files matching 'ares_build.h.orig' found under directory 'c-ares'
+    warning: no previously-included files matching '_corecffi.c' found under directory 'gevent'
+    warning: no previously-included files found matching 'Makefile'
+  Running setup.py install for gevent-websocket
+    
+  Running setup.py install for greenlet
+    building 'greenlet' extension
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c greenlet.c -o build/temp.linux-x86_64-2.7/greenlet.o
+    x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -D_FORTIFY_SOURCE=2 -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security build/temp.linux-x86_64-2.7/greenlet.o -o build/lib.linux-x86_64-2.7/greenlet.so
+    
+Successfully installed gevent-socketio gevent gevent-websocket greenlet
+Cleaning up...
