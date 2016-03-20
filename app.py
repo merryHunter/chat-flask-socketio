@@ -2,7 +2,6 @@ from chat import app
 from gevent import monkey
 from socketio.server import SocketIOServer
 
-
 monkey.patch_all()
 
 PORT = 5000

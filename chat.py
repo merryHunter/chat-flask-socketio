@@ -157,6 +157,4 @@ def socketio(remaining):
                          exc_info=True)
     return Response()
 
-
-if __name__ == '__main__':
-    app.run()
+init_db()
