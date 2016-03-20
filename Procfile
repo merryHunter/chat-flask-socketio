@@ -1,1 +1,1 @@
-web: gunicorn --worker-class socketio.sgunicorn.GeventSocketIOWorker app:app
+web: gunicorn --worker-class --timeout 90 socketio.sgunicorn.GeventSocketIOWorker app:app
